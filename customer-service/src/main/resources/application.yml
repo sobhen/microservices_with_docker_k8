@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:file:C:/Users/Sobhen/Desktop/My_Space/Study_Drive/Miscroservices/Spring_Boot_Cloud/Udemy_MS_Spring_Docker_K8/workspace/data/customerDB
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  sql:
+    init:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
